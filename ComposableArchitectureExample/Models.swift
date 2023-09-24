@@ -33,8 +33,7 @@ struct MovieOverview: Codable, Equatable, Identifiable, Hashable {
     let voteAverage: Double
     let voteCount: Int
     var smallPosterURL: URL? {
-        print("\(APIClient.Constants.imagesPath)/w154\(posterPath)")
-        return URL(string: "\(APIClient.Constants.imagesPath)/w92\(posterPath)")
+        URL(string: "\(APIClient.Constants.imagesPath)/w92\(posterPath)")
     }
     var largePosterURL: URL? {
         URL(string: "\(APIClient.Constants.imagesPath)/w300\(posterPath)")

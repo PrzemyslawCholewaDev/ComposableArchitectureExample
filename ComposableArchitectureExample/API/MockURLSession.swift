@@ -20,7 +20,6 @@ class MockURLProtocol: URLProtocol {
     }
 
     override func startLoading() {
-        print("start")
         do {
             guard
                 let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)
@@ -32,14 +31,11 @@ class MockURLProtocol: URLProtocol {
             if
                 let data = Self.mockJSON.data(using: .utf8)
             {
-                print("havedata")
                 client?.urlProtocol(self, didLoad: data)
             }
-            print("why")
             client?.urlProtocolDidFinishLoading(self)
         } catch {
             client?.urlProtocol(self, didFailWithError: error)
-            print("error")
         }
     }
 
