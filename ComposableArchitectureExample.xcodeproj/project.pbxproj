@@ -22,12 +22,12 @@
 		69F567A42ABF13CE001D5234 /* DependencyHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F567A32ABF13CE001D5234 /* DependencyHelpers.swift */; };
 		69F567A62ABFA622001D5234 /* URLRequest+curlPrinting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F567A52ABFA622001D5234 /* URLRequest+curlPrinting.swift */; };
 		69F567A82AC0BF6A001D5234 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F567A72AC0BF6A001D5234 /* MockURLSession.swift */; };
-		69F567B02AC0CED8001D5234 /* MovieDetailsJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F567AF2AC0CED8001D5234 /* MovieDetailsJSON.swift */; };
-		69F567B22AC0CF20001D5234 /* MovieListJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F567B12AC0CF20001D5234 /* MovieListJSON.swift */; };
 		69F567B52AC0E5BF001D5234 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 69F567B42AC0E5BF001D5234 /* Kingfisher */; };
 		69F567B72AC0EF96001D5234 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F567B62AC0EF96001D5234 /* MovieDetail.swift */; };
 		69F567BA2AC0F302001D5234 /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 69F567B92AC0F302001D5234 /* SwiftUINavigation */; };
 		69F567BC2AC0F9A1001D5234 /* GetMovieDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F567BB2AC0F9A1001D5234 /* GetMovieDetailRequest.swift */; };
+		69F567BF2AC0FE77001D5234 /* MovieListJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F567BD2AC0FE77001D5234 /* MovieListJSON.swift */; };
+		69F567C02AC0FE77001D5234 /* MovieDetailsJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F567BE2AC0FE77001D5234 /* MovieDetailsJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,10 +47,10 @@
 		69F567A32ABF13CE001D5234 /* DependencyHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyHelpers.swift; sourceTree = "<group>"; };
 		69F567A52ABFA622001D5234 /* URLRequest+curlPrinting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+curlPrinting.swift"; sourceTree = "<group>"; };
 		69F567A72AC0BF6A001D5234 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
-		69F567AF2AC0CED8001D5234 /* MovieDetailsJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieDetailsJSON.swift; path = ../../../../../MovieDetailsJSON.swift; sourceTree = "<group>"; };
-		69F567B12AC0CF20001D5234 /* MovieListJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieListJSON.swift; path = ../../../../../MovieListJSON.swift; sourceTree = "<group>"; };
 		69F567B62AC0EF96001D5234 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		69F567BB2AC0F9A1001D5234 /* GetMovieDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailRequest.swift; sourceTree = "<group>"; };
+		69F567BD2AC0FE77001D5234 /* MovieListJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListJSON.swift; sourceTree = "<group>"; };
+		69F567BE2AC0FE77001D5234 /* MovieDetailsJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +127,8 @@
 		69E3E8562ABEF7B0005710C8 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				69F567AF2AC0CED8001D5234 /* MovieDetailsJSON.swift */,
-				69F567B12AC0CF20001D5234 /* MovieListJSON.swift */,
+				69F567BE2AC0FE77001D5234 /* MovieDetailsJSON.swift */,
+				69F567BD2AC0FE77001D5234 /* MovieListJSON.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -214,13 +214,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F567A82AC0BF6A001D5234 /* MockURLSession.swift in Sources */,
+				69F567C02AC0FE77001D5234 /* MovieDetailsJSON.swift in Sources */,
 				69E3E8552ABEF686005710C8 /* Models.swift in Sources */,
 				69F567BC2AC0F9A1001D5234 /* GetMovieDetailRequest.swift in Sources */,
-				69F567B02AC0CED8001D5234 /* MovieDetailsJSON.swift in Sources */,
 				69E3E8452ABEE4A1005710C8 /* MoviesList.swift in Sources */,
+				69F567BF2AC0FE77001D5234 /* MovieListJSON.swift in Sources */,
 				69F567A42ABF13CE001D5234 /* DependencyHelpers.swift in Sources */,
 				69F5679C2ABF0EBC001D5234 /* APIClient.swift in Sources */,
-				69F567B22AC0CF20001D5234 /* MovieListJSON.swift in Sources */,
 				69F567992ABF0EBC001D5234 /* APIRequest.swift in Sources */,
 				69F567A22ABF1255001D5234 /* GetMoviesAPIService.swift in Sources */,
 				69F5679A2ABF0EBC001D5234 /* APIError.swift in Sources */,

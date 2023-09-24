@@ -8,7 +8,6 @@
 import Foundation
 import Dependencies
 
-/// Client without external authentication support. It tries to take token directly from the request.
 class APIClient: DependencyKey {
     enum Constants {
         static let apiPath = "https://api.themoviedb.org/3"
@@ -37,7 +36,7 @@ class APIClient: DependencyKey {
     ///   - completion: The completion closure containing result of an operation.
     func perform<Request>(request: Request) async throws -> Request.Response where Request: APIRequest {
 
-        // Build a headers.
+        // Build headers.
         var additionalHeaders = [String: String]()
         if request.authorizationRequired {
             // TODO: ⚠️ Move auth key to dependency injection, and use tool like Cocoa Keys to not store this in repository

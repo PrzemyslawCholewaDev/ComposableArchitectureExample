@@ -57,7 +57,6 @@ struct MoviesListView: View {
                     }
                 }
             }
-//            .navigationTitle("Daily Pickles")
         }
     }
 }
